@@ -33,7 +33,7 @@ window.onload=function(){
 	}
 	oSilderBox.onmouseout=function(){
 		clearInterval(timer);
-		timer=setInterval(next,1500);
+		timer=setInterval(next,2000);
 	}
 }
 
