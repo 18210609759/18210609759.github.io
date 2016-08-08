@@ -4,7 +4,7 @@ a,body{color:#333;}
 img,li{vertical-align:top;}
 .main,.main-l,.main-r{min-height:500px;}
 blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}
-body{background-color:#fff; font-size: 12px;}
+body{background-color:#fff; position:relative; top:0; left:0;}
 /*/body,button,input,select,textarea{font:12px/1.2 'Microsoft YaHei',tahoma,arial,serif;}*/
 /**********************列表*******************************/
 ol,ul{list-style-type:none;}
