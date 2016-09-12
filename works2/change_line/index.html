@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas 变换曲线</title>
+	<link rel="icon" href="img/titicon.png" type="img/titicon.png"/> <!--标题图标-->
+	<link rel="stylesheet" href="../../css/base.min.css">
+<style>
+	body{ background: #000; overflow: hidden; }
+	span{ position: absolute; right: 20px; top: 20px; width: 40px; height: 40px; background: url(img/icon.png) center center no-repeat; background-size: 100%; cursor: pointer; }
+	span:hover{ background-image: url(img/icon2.png); }
+</style>
+<script>
+	function rnd(n,m){
+		return parseInt(Math.random()*(m-n)+n);
+	}
+	window.onload = function(){
+		var oSpan = document.querySelector('span');
+		var oC = document.getElementById('c1');
+		oC.width = document.documentElement.clientWidth;
+		oC.height = document.documentElement.clientHeight;
+
+		var gd = oC.getContext('2d');
+		var N = 6; // 点个数
+		var LEN = 20; // 尾巴数
+		// 存点
+		var aPoint = [];
+		var oldPoint = [];
+
+		for(var i=0; i<N; i++){
+			aPoint.push({
+				x : rnd(0,oC.width),
+				y : rnd(0,oC.height),
+				iSpeedX : rnd(-10,10),
+				iSpeedY : rnd(-10,10)
+			});
+		}
+
+		setInterval(function(){
+			gd.clearRect(0,0,oC.width,oC.height);
+			// 使点运动
+			for(var i=0; i<N; i++){
+				if(aPoint[i].x > oC.width){
+					aPoint[i].iSpeedX*=-1;
+				}
+				if(aPoint[i].x < 0){
+					aPoint[i].iSpeedX*=-1;
+				}
+				if(aPoint[i].y > oC.height){
+					aPoint[i].iSpeedY*=-1;
+				}
+				if(aPoint[i].y < 0){
+					aPoint[i].iSpeedY*=-1;
+				}
+
+				aPoint[i].x+=aPoint[i].iSpeedX;
+				aPoint[i].y+=aPoint[i].iSpeedY;
+			}
+
+			// 画点
+			for(var i=0; i<N; i++){
+				drawPoint(aPoint[i]);
+			}
+
+			// 连线
+			gd.beginPath();
+			gd.moveTo(aPoint[0].x,aPoint[0].y);
+			gd.strokeStyle = 'rgba('+rnd(200,256)+','+rnd(10,100)+','+rnd(10,200)+')';
+			for(var i=0; i<N; i++){
+				gd.lineTo(aPoint[i].x,aPoint[i].y);
+			}
+			gd.closePath();
+			gd.stroke();
+
+			// 画尾巴
+			var arr = [];
+			for(var i=0; i<N; i++){
+				arr.push({
+					x : aPoint[i].x,
+					y : aPoint[i].y,
+					iSpeedX : aPoint[i].iSpeedX,
+					iSpeedY : aPoint[i].iSpeedY
+				});
+			}
+
+			oldPoint.push(arr);
+			if(oldPoint.length > LEN){
+				oldPoint.shift();
+			}
+			for(var i=0; i<oldPoint.length; i++){
+				gd.beginPath();
+				gd.moveTo(oldPoint[i][0].x,oldPoint[i][0].y);
+				for(var j=0; j<oldPoint[i].length; j++){
+					gd.lineTo(oldPoint[i][j].x,oldPoint[i][j].y);
+				}
+				gd.strokeStyle = 'rgba(246,7,7,'+i/LEN+')';
+				gd.closePath();
+				gd.stroke();
+			}
+		},16);
+		
+
+		function drawPoint(oPoint){
+			gd.beginPath();
+			gd.fillStyle = '#F51184';
+			gd.fillRect(oPoint.x,oPoint.y,1,1);
+		}
+
+		// 关闭窗口
+		oSpan.onclick = function(){
+			window.close();
+		}
+	}
+</script>
+</head>
+<body>
+	<span></span>
+	<canvas id="c1"></canvas>
+</body>
+</html>

@@ -1,0 +1,28 @@
+header{width: 16rem; height: 2.5rem; background: url(../img/header_bg.png); background-size: 16rem 2.5rem; border-top: 0.025rem solid #c5c5c5;}
+header .return{width: 3.175em; height: 1.55rem; background: url(../img/return_bg.png) no-repeat; background-size: 100%; margin: 0.425rem 0 0 0.575rem;}
+header .logo{width: 3.7rem; height: 1rem; background: url(../img/logo_03.png) no-repeat; background-size: 100%; margin: 0.625rem 0 0 2.55rem;}
+header .classify{width: 2.4rem; height: 1.4rem; background: url(../img/classify_bg.png); background-size: 2.4rem 1.4rem; border-radius: 0.2rem; font-size: 0.6rem; color: #666; line-height: 1.4rem; text-align: center; margin: 0.4rem 0.55rem 0 0; box-shadow: 0 0 0.2rem rgba(0,0,0,0.2)}
+
+section nav{width: 16rem; height: 2rem; border-bottom: 0.025rem solid #dcdcdc; }
+section nav ul{display: -webkit-box;}
+section nav li{width: 4rem; height: 2rem; box-sizing: border-box; border-right: 0.025rem solid #dcdcdc; -webkit-box-flex: 1;}
+section nav li a{display:block; width: 4rem; height: 2rem; font-size: 0.6rem; color: #999; line-height: 2rem; text-align: center;}
+section nav li a.active{color: #d51942;}
+
+section .list li{width: 16rem; height: 5rem; border-bottom: 0.025rem solid #dcdcdc;}
+section .list li a{display: block; width: 100%; height: 100%;}
+section .list li .pics{width: 5.95rem; height: 3.95rem; border: 0.025rem solid #dcdcdc; display: -webkit-box; -webkit-box-pack: center; -webkit-box-align: center; margin: 0.5rem 1.1rem 0 0.75rem;}
+section .list li .pics img{width: 5.6rem; height: 3.6rem;}
+section .list li .txt{width: 7.5rem; height: 3.95rem; margin-top: 0.5rem;}
+section .list li .txt h5{font-size: 0.7rem; linhe-height: 0.95rem;}
+section .list li .txt h5 i{color: #d51938;}
+section .list li .txt h6{font-size: 0.6rem; font-weight: bold; color: #c3213c; height: 1rem;}
+section .list li .txt h6 em{font-size: 0.7rem;}
+section .list li .txt h6 b{font-size: 1rem;}
+section .list li .txt h6 i{font-size: 0.6rem; color: #ccc; font-weight: normal; text-decoration: line-through; margin-left: 0.5rem;}
+section .list li .txt span{font-size: 0.45rem; color: #999;}
+section .list li .txt span.tip1{position: absolute; display: block; padding: 0 0.2rem; height: 0.75rem; border-radius: 0.1rem; background: #e80; font-size: 0.4rem; color: #fff; text-align: center; line-height: 0.75rem; margin-top: 0.45rem;}
+section .list li .txt span.tip2{position: absolute; display: block; padding: 0 0.2rem; height: 0.75rem; border-radius: 0.1rem; background: #3b8bc8; font-size: 0.4rem; color: #fff; text-align: center; line-height: 0.75rem; margin-top: 0.45rem;}
+section .list li .txt span.tip3{position: absolute; display: block; padding: 0 0.2rem; height: 0.75rem; border-radius: 0.1rem; background: #ccc; font-size: 0.4rem; color: #fff; text-align: center; line-height: 0.75rem; margin-top: 0.45rem;}
+section .list li .txt span.tip4{position: absolute; display: block; padding: 0 0.2rem; height: 0.75rem; border-radius: 0.1rem; background: #490; font-size: 0.4rem; color: #fff; text-align: center; line-height: 0.75rem; margin-top: 0.45rem;}
+section .list li.saled{background: #f5f0eb;}

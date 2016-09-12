@@ -1,0 +1,138 @@
+header{
+	width: 16rem;
+	height: 2.5rem;
+	background: url(../img/header_bg.png);
+	background-size: 16rem 2.5rem;
+	border-top: 0.025rem solid #c5c5c5;
+}
+header .return{
+	width: 3.2rem;
+	height: 1.55rem;
+	background: url(../img/return_icon.png) no-repeat;
+	background-size: 100%;
+	margin: 0.4rem 0 0 0.5rem;
+}
+header h2{
+	width: 9.4rem;
+	text-align: center;
+	font-size: 0.8rem;
+	color: #333;
+	line-height: 2rem;
+}
+
+section .list li{
+	width: 16rem; 
+	height: 5rem; 
+	border-bottom: 0.025rem solid #dcdcdc;
+}
+section .list li a{
+	display: block; 
+	width: 100%; 
+	height: 100%;
+}
+section .list li .pics{
+	width: 5.95rem; 
+	height: 3.95rem; 
+	border: 0.025rem solid #dcdcdc; 
+	display: -webkit-box; 
+	-webkit-box-pack: center; 
+	-webkit-box-align: center; 
+	margin: 0.5rem 1.1rem 0 0.75rem;
+}
+section .list li .pics img{
+	width: 5.6rem; 
+	height: 3.6rem;
+	}
+section .list li .txt{
+	position: relative;
+	width: 7.5rem;
+	height: 3.95rem; 
+	margin-top: 0.5rem;
+}
+section .list li .txt h5{
+	font-size: 0.7rem; 
+	line-height: 0.95rem;
+	}
+section .list li .txt h5 i{
+	color: #d51938;
+}
+section .list li .txt div{
+	height: 2rem;
+	font-size: 0.6rem; 
+	font-weight: bold; 
+	color: #c3213c; 
+	height: 1rem;
+}
+section .list li .txt div em{
+	font-size: 0.7rem;
+}
+section .list li .txt div b{
+	font-size: 1rem;
+}
+section .list li .txt i{
+	font-size: 0.6rem; 
+	color: #ccc; 
+	font-weight: normal; 
+	text-decoration: line-through; 
+}
+section .list li .txt span{
+	font-size: 0.45rem; 
+	color: #999;
+}
+section .list li .txt span.tip1{
+	position: absolute; 
+	display: block; 
+	padding: 0 0.2rem; 
+	height: 0.75rem; 
+	border-radius: 0.1rem; 
+	background: #e80; 
+	font-size: 0.4rem; 
+	color: #fff; 
+	text-align: center; 
+	line-height: 0.75rem; 
+	margin-top: 0.45rem;
+}
+section .list li .txt span.tip2{
+	position: absolute; 
+	display: block; 
+	padding: 0 0.2rem; 
+	height: 0.75rem; 
+	border-radius: 0.1rem; 
+	background: #3b8bc8; 
+	font-size: 0.4rem; 
+	color: #fff; 
+	text-align: center; 
+	line-height: 0.75rem; 
+	margin-top: 0.45rem;
+}
+section .list li .txt span.tip3{
+	position: absolute; 
+	display: block; 
+	padding: 0 0.2rem; 
+	height: 0.75rem; 
+	border-radius: 0.1rem; 
+	background: #ccc; 
+	font-size: 0.4rem; 
+	color: #fff; 
+	text-align: center; 
+	line-height: 0.75rem; 
+	margin-top: 0.45rem;
+}
+section .list li .txt span.tip4{
+	position: absolute;
+	right: 0.5rem; 
+	bottom: 0;
+	display: block; 
+	padding: 0 0.2rem; 
+	height: 0.75rem; 
+	border-radius: 0.1rem; 
+	background: #39b54a; 
+	font-size: 0.4rem; 
+	color: #fff; 
+	text-align: center; 
+	line-height: 0.75rem; 
+	margin-top: 0.45rem;
+}
+section .list li.saled{
+	background: #f5f0eb;
+}

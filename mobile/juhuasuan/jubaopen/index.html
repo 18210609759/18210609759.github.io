@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<script>
+		(function(win,doc){
+			function change(){
+				doc.documentElement.style.fontSize=doc.documentElement.clientWidth/16+'px';
+			};
+			win.addEventListener('resize',change,false)
+			change();
+		})(window,document)
+	</script>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>聚宝盆</title>
+</head>
+<body>
+	<header class="clearfix">
+		<a href="../index.html" class="return fl"></a>
+		<h2 class="fl">聚宝盆</h2>
+	</header>
+
+	<section>
+		<nav>
+			<ul>
+				<li><a href="javascript:;">商品</a></li>
+				<li><a href="javascript:;">生活</a></li>
+				<li><a href="javascript:;">品牌</a></li>
+				<li><a href="javascript:;" class="active">聚宝盆</a></li>
+			</ul>
+		</nav>
+
+		<div class="banner">
+			<ul>
+				<li><img src="img/banner_pic.png" alt="" class="banner_pic"></li>
+			</ul>
+			<ul class="btn">
+				<li class="active"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+
+		<div class="list">
+			<ul>
+				<li><a href="javascript:;" class="clearfix">
+ 					<div class="icon fl"><img src="img/icons_03.png"></div>
+ 					<div class="txt fl">
+ 						<h2 style="color: #68207d;">聚名品</h2>
+ 						<p>轻奢购物第一站</p>
+ 					</div>
+				</a></li>
+				<li><a href="javascript:;" class="clearfix">
+ 					<div class="icon fl"><img src="img/icons_07.png"></div>
+ 					<div class="txt fl">
+ 						<h2 style="color: #9e5f44;">聚家装</h2>
+ 						<p>家装一起团 费用省一半！</p>
+ 					</div>
+				</a></li>
+				<li><a href="javascript:;" class="clearfix">
+ 					<div class="icon fl"><img src="img/icons_11.png"></div>
+ 					<div class="txt fl">
+ 						<h2 style="color: #81ac5e;">聚&nbsp;&nbsp;&nbsp;透</h2>
+ 						<p>每晚8点 预定明日商品</p>
+ 					</div>
+				</a></li>
+				<li><a href="javascript:;" class="clearfix">
+ 					<div class="icon fl"><img src="img/icons_13.png"></div>
+ 					<div class="txt fl">
+ 						<h2 style="color: #d76033;">整点聚</h2>
+ 						<p>0.88元秒杀，比比谁更快</p>
+ 					</div>
+				</a></li>
+			</ul>
+		</div>
+	</section>
+
+</body>
+</html>

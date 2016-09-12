@@ -1,0 +1,119 @@
+body{
+	background: #75c8b9;
+	overflow: hidden;
+}
+.title{
+	font-size: 40px; 
+	color: #fff; 
+	text-align: center;
+	margin: 1em 0;
+	transform: translateY(-130px);
+}
+.content{
+	position: relative;
+	background: url(../img/pc.png) no-repeat; 
+	background-size: cover;
+	border-top: 1px solid #75c8b9;
+	width: 646px; 
+	height: 520px;
+	margin: 0 auto;
+	transform: translateY(520px);
+	transition: 1.5s all ease;
+}
+.content .screen{
+	width: 594px;
+	height: 340px;
+	position: relative;
+	overflow: hidden;
+	margin: 24px 0 0 26px;
+}
+.content #next,
+.content #prev{
+	position: absolute;
+	top: 40%;
+	margin-top: -94px;
+	width: 76px;
+	height: 188px;
+	transition: .7s all ease;
+}
+.content #next{
+	cursor: pointer;
+	right: -110px;
+	background: url(../img/next_icon.png) no-repeat center center;
+}
+.content #next:hover{
+	background: url(../img/next_icon.png) no-repeat center center rgba(0,0,0,0.3);
+}
+.content #next:active{
+	box-shadow: 0 0 10px #fff;
+}
+.content #prev{
+	cursor: pointer;
+	left: -110px;
+	background: url(../img/prev_icon.png) no-repeat center center;
+}
+.content #prev:hover{
+	background: url(../img/prev_icon.png) no-repeat center center rgba(0,0,0,0.3);
+}
+.content #prev:active{
+	box-shadow: 0 0 10px #fff;
+}
+.content .list{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: calc(100%-26px);
+	height: calc(100%-24px);
+}
+.content .list .nav{
+	position: relative;
+	width: 594px;
+	height: 300px;
+	padding-top: 40px;
+	background: url(../img/nav_bg.jpg);
+	background-size: cover;
+}
+.content .list .nav a{
+	display: block;
+	margin-left: 40px;
+	margin-bottom: 30px;
+	font-size: 25px;
+	color: #fff;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px #000; 
+	transition: .2s all ease;
+}
+.content .list .nav a:hover{
+	text-shadow: 0 0 4px #000;
+}
+.content .list .works{
+	width: 594px;
+	height: 340px;
+}
+.content .list .works .web-site{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.content .list .works span{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	background: #75c8b9;
+	opacity: 0.5;
+	font-size: 26px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	text-shadow: 1px 2px 3px #000;
+	transform: translateY(-60px);
+}
+.content .list .works img{
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+}
+

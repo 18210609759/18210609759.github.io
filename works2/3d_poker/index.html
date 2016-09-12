@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3D 扑克牌</title>
+	<link rel="icon" href="img/titicon.png" type="../img/titicon.png"/> <!--标题图标-->
+	<link rel="stylesheet" href="../../css/base.min.css">
+<style>
+	body{ background: #000; }
+	html,body{ overflow: hidden; height: 100%; }
+	#box{ width: 120px; height: auto; margin: 220px auto; }
+	#box ul{ width: 120px; height: 170px; position: relative; transform: perspective(800px) rotateX(70deg) rotateY(0deg); transform-style: preserve-3d; transition: .7s all ease; }
+	#box li{ width: 120px; height: auto; position: absolute; left: 0; top: 0; transform: rotateY(0deg) translateZ(0px); }
+	#box li img{ width: 100%; }
+</style>
+<script>
+	window.onload = function(){
+		var oBox = document.getElementById('box');
+		var oUl = oBox.querySelector('ul');
+		var aLi = oUl.children;
+		var len = aLi.length;
+
+		oBox.onclick = function(){
+			if(!oUl.getAttribute('index')){
+				oUl.style.transform = 'perspective(800px) rotateX(-15deg)';
+				oUl.setAttribute('index','on');
+			}else{
+				return;
+			}
+			
+			oUl.addEventListener('transitionend',function(){
+				for(var i=0; i<aLi.length; i++){
+					aLi[i].style.transition = '1s all ease '+(len-i)*200+'ms';
+					aLi[i].style.transform = 'rotateY('+360/len*i+'deg) translateZ(400px)';
+				}
+
+				aLi[0].addEventListener('transitionend',function(){
+					var x = 150;
+					var y = 0;
+					var iSpeedX = 0;
+					var iSpeedY = 0;
+					var lastX = 0;
+					var lastY = 0;
+					// 拖拽效果
+					setOpa();
+					clearMove();
+
+					document.onmousedown = function(ev){
+						oUl.style.transition = 'none';
+						var disX = ev.pageX - y;
+						var disY = ev.pageY - x;
+
+						document.onmousemove = function(ev){
+							y = ev.pageX - disX;
+							x = ev.pageY - disY;
+
+							if(x > 600){
+								x = 600;
+							}
+							if(x < -600){
+								x = -600;
+							}
+
+							oUl.style.transform = 'perspective(800px) rotateX('+-x/10+'deg) rotateY('+y/10+'deg)';
+
+							// 求速度
+							iSpeedX = x - lastX;
+							iSpeedY = y - lastY;
+							lastX = x;
+							lastY = y;
+							setOpa();
+						}
+
+						document.onmouseup = function(){
+							clearMove();
+							setOpa();
+							clearInterval(oUl.timer);
+							oUl.timer = setInterval(function(){
+								x+=iSpeedX;
+								y+=iSpeedY;
+								iSpeedX*=.8;
+								iSpeedY*=.8;
+
+								if(Math.abs(iSpeedX) < 1){
+									iSpeedX=0;;
+								}
+								if(Math.abs(iSpeedY) < 1){
+									iSpeedY=0;
+								}
+								if(iSpeedX == 0 && iSpeedY == 0){
+									clearInterval(oUl.timer);
+								}
+
+								oUl.style.transform = 'perspective(800px) rotateX('+-x/10+'deg) rotateY('+y/10+'deg)';
+
+							},30);
+
+							document.onmousemove = null;
+							document.onmouseup = null;
+						}
+						ev.preventDefault();
+					}
+					// 关灯效果
+					function setOpa(){
+						for(var i=0; i<len; i++){
+							var d = Math.abs(360/len*i+y/10)%360;
+							if(d > 180){
+								d = 360 - d;
+							}
+							d = 1 - d/180;
+							if(d < 0.2){
+								d = 0.2;
+							}
+							aLi[i].style.opacity = d;
+						}
+					}
+				},false);
+
+				function setMove(){
+					for(var i=0; i<len; i++){
+						aLi[i].style.transition = '1s all ease';
+					}
+				}
+				function clearMove(){
+					for(var i=0; i<len; i++){
+						aLi[i].style.transition = '';
+					}
+				}
+			},false);
+		}
+	}
+</script>
+</head>
+<body>
+	<div id="box">
+		<ul>
+			<li><img src="img/1.png" alt=""></li>
+			<li><img src="img/2.png" alt=""></li>
+			<li><img src="img/3.png" alt=""></li>
+			<li><img src="img/4.png" alt=""></li>
+			<li><img src="img/5.png" alt=""></li>
+			<li><img src="img/6.png" alt=""></li>
+			<li><img src="img/7.png" alt=""></li>
+			<li><img src="img/8.png" alt=""></li>
+			<li><img src="img/9.png" alt=""></li>
+			<li><img src="img/10.png" alt=""></li>
+			<li><img src="img/11.png" alt=""></li>
+			<li><img src="img/12.png" alt=""></li>
+			<li><img src="img/13.png" alt=""></li>
+			<li><img src="img/14.png" alt=""></li>
+		</ul>
+	</div>
+</body>
+</html>

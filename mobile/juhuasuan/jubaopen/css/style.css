@@ -1,0 +1,102 @@
+header{
+	width: 16rem;
+	height: 2.5rem;
+	background: url(../img/header_bg.png);
+	background-size: 16rem 2.5rem;
+	border-top: 0.025rem solid #c5c5c5;
+}
+header .return{
+	width: 3.2rem;
+	height: 1.55rem;
+	background: url(../img/return_icon.png) no-repeat;
+	background-size: 100%;
+	margin: 0.4rem 0 0 0.5rem;
+}
+header h2{
+	width: 9.4rem;
+	text-align: center;
+	font-size: 0.8rem;
+	color: #333;
+	line-height: 2rem;
+}
+section nav{
+	width: 16rem;
+	height: 2rem; 
+	border-bottom: 0.025rem solid #dcdcdc; 
+}
+section nav ul{
+	display: -webkit-box;
+}
+section nav li{
+	width: 4rem; 
+	height: 2rem; 
+	box-sizing: border-box; 
+	border-right: 0.025rem solid #dcdcdc; 
+	-webkit-box-flex: 1;
+}
+section nav li a{
+	display:block; 
+	width: 4rem; 
+	height: 2rem; 
+	font-size: 0.6rem; 
+	color: #999; 
+	line-height: 2rem; 
+	text-align: center;
+}
+section nav li a.active{
+	color: #d51942;
+}
+section .banner{
+	position: relative;
+	width: 16rem;
+	height: 6.25rem;
+}
+section .banner .banner_pic{
+	width: 16rem;
+	height: 5.57rem;
+}
+section .banner .btn{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -1.25rem;
+	width: 2.5rem;
+	display: -webkit-box;
+}
+section .banner .btn li{
+	-webkit-box-flex: 1;
+	width: 0.2rem;
+	height: 0.2rem;
+	background: #ccc;
+	margin-right: 0.3rem;
+	border-radius: 50%;
+}
+section .banner .btn li.active{
+	background: #333;
+}
+section .list li{
+	width: 16rem;
+	height: 4rem;
+	border-bottom: 0.025rem solid #dcdcdc;
+	background: url(../img/right_icon.png) no-repeat 14.75rem center;
+	background-size: 0.3rem 0.5rem;
+}
+section .list li .icon{
+	width: 1.95rem;
+	height: 1.95rem;
+	margin: 1rem 1.25rem 0 0.85rem;
+}
+section .list li .icon img{
+	width: 1.95rem;
+	height: 1.95rem;
+}
+section .list li .txt h2{
+	font-size: 0.9rem;
+	font-weight: bold;
+	margin-top: 1rem;
+}
+section .list li .txt p{
+	font-size: 0.6rem;
+	color: #999;
+	margin-top: 0.25rem;
+}

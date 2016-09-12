@@ -1,0 +1,199 @@
+header{
+	width: 16rem;
+	height: 2.5rem;
+	background: url(../img/header_bg.png);
+	background-size: 16rem 2.5rem;
+	border-top: 0.025rem solid #c5c5c5;
+}
+header .return{
+	width: 3.2rem;
+	height: 1.55rem;
+	background: url(../img/return_icon.png) no-repeat;
+	background-size: 100%;
+	margin: 0.4rem 0 0 0.5rem;
+}
+header h2{
+	width: 9.4rem;
+	text-align: center;
+	font-size: 0.8rem;
+	color: #333;
+	line-height: 2rem;
+}
+
+section .banner{
+	position: relative;
+	width: 16rem;
+	height: 8rem;
+}
+section .banner img{
+	width: 16rem;
+	height: 8rem;
+}
+section .banner .shadow{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 16rem;
+	height: 1rem;
+	background: rgba(0,0,0,0.5);
+}
+section .banner h2{
+	position: absolute;
+	left: 0.4rem;
+	bottom: 0;
+	font-size: 0.6rem;
+	color: #fff;
+	line-height: 1rem;
+}
+section nav{
+	width: 16rem;
+	height: 2.2rem;
+	background: url(../img/nav_bg.png);
+	background-size: 16rem 2.2rem;
+}
+section nav .logo{
+	width: 3.125rem;
+	height: 1.5rem;
+	background: url(../img/niki_logo.png) no-repeat;
+	background-size: 100%;
+	margin: 0.375rem 0 0 0.5rem;
+	text-indent: -9999em;
+}
+section nav .all_saled{
+	margin: 0.4rem 0.45rem 0 0;
+}
+section nav .all_saled b{
+	font-size: 1.5rem;
+	color: #c7223d;
+	font-weight: bold;
+	line-height: 1.5rem;
+	margin-left: 1.05rem;
+}
+section nav .all_saled span{
+	font-size: 0.6rem;
+	color: #999;
+	line-height: 0.75rem;
+	height: 1.05rem;
+	margin-left: 0.45rem;
+}
+section nav .all_saled span i,
+section nav .all_saled span em{
+	display: block;
+}
+section nav .all_saled span em{
+	color: #c7223d;
+}
+
+section .list li{
+	width: 16rem; 
+	height: 5rem; 
+	border-bottom: 0.025rem solid #dcdcdc;
+}
+section .list li a{
+	display: block; 
+	width: 100%; 
+	height: 100%;
+}
+section .list li .pics{
+	width: 5.95rem; 
+	height: 3.95rem; 
+	border: 0.025rem solid #dcdcdc; 
+	display: -webkit-box; 
+	-webkit-box-pack: center; 
+	-webkit-box-align: center; 
+	margin: 0.5rem 1.1rem 0 0.75rem;
+}
+section .list li .pics img{
+	width: 5.6rem; 
+	height: 3.6rem;
+	}
+section .list li .txt{
+	width: 7.5rem;
+	height: 3.95rem; 
+	margin-top: 0.5rem;
+}
+section .list li .txt h5{
+	font-size: 0.7rem; 
+	line-height: 0.95rem;
+	}
+section .list li .txt h5 i{
+	color: #d51938;
+}
+section .list li .txt h6{
+	font-size: 0.6rem; 
+	font-weight: bold; 
+	color: #c3213c; 
+	height: 1rem;
+}
+section .list li .txt h6 em{
+	font-size: 0.7rem;
+}
+section .list li .txt h6 b{
+	font-size: 1rem;
+}
+section .list li .txt h6 i{
+	font-size: 0.6rem; 
+	color: #ccc; 
+	font-weight: normal; 
+	text-decoration: line-through; 
+	margin-left: 0.5rem;
+}
+section .list li .txt span{
+	font-size: 0.45rem; 
+	color: #999;
+	}
+section .list li .txt span.tip1{
+	position: absolute; 
+	display: block; 
+	padding: 0 0.2rem; 
+	height: 0.75rem; 
+	border-radius: 0.1rem; 
+	background: #e80; 
+	font-size: 0.4rem; 
+	color: #fff; 
+	text-align: center; 
+	line-height: 0.75rem; 
+	margin-top: 0.45rem;
+}
+section .list li .txt span.tip2{
+	position: absolute; 
+	display: block; 
+	padding: 0 0.2rem; 
+	height: 0.75rem; 
+	border-radius: 0.1rem; 
+	background: #3b8bc8; 
+	font-size: 0.4rem; 
+	color: #fff; 
+	text-align: center; 
+	line-height: 0.75rem; 
+	margin-top: 0.45rem;
+}
+section .list li .txt span.tip3{
+	position: absolute; 
+	display: block; 
+	padding: 0 0.2rem; 
+	height: 0.75rem; 
+	border-radius: 0.1rem; 
+	background: #ccc; 
+	font-size: 0.4rem; 
+	color: #fff; 
+	text-align: center; 
+	line-height: 0.75rem; 
+	margin-top: 0.45rem;
+}
+section .list li .txt span.tip4{
+	position: absolute; 
+	display: block; 
+	padding: 0 0.2rem; 
+	height: 0.75rem; 
+	border-radius: 0.1rem; 
+	background: #490; 
+	font-size: 0.4rem; 
+	color: #fff; 
+	text-align: center; 
+	line-height: 0.75rem; 
+	margin-top: 0.45rem;
+}
+section .list li.saled{
+	background: #f5f0eb;
+}

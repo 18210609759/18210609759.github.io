@@ -1,47 +1,273 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>home page</title>
-		<link rel="stylesheet" href="css/reset.css" />
-		<link rel="stylesheet" href="css/index.css" />
-		<script src="js/index.js"></script>
-	</head>
-	<body>
-		<div class="personal" name="personal">
-			<div class="nav">
-				<div class="nav-box clx">
-					<h1 class="fl">
-						<a href="javascript:;"><img src="img/meghna.png" alt="" /></a>
-					</h1>
-					<audio controls autoplay class="nav-ado" src="Brighter Than The Sun.mp3"></audio>
-					<ul class="nav-ul fr">
-						<li><a href="">Home</a></li>
-						<li><a href="">My House</a></li>
-						<li><a href="">My Design</a></li>
-						<li><a href="">My Skills</a></li>
-						<li><a href="">My Project</a></li>
-						<li><a href="">About Me</a></li>	
-					</ul>
-				</div>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>王泽欢 | 个人网站</title>
+	<link rel="icon" href="images/titicon.png" type="image/x-icon"/> <!--标题图标-->
+	<link href='//cdn.webfont.youziku.com/webfonts/nomal/89699/47031/57c19885f629d81604fb7d04.css' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="css/base.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<script src="js/common.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<!-- 翻页标识 -->
+	<ol class="page_tip">
+		<li>
+			<span class="p_on"></span>
+			<p>首页</p>
+		</li>
+		<li>
+			<span></span>
+			<p>关于我</p>
+		</li>
+		<li>
+			<span></span>
+			<p>作品</p>
+		</li>
+		<li>
+			<span></span>
+			<p>联系我</p>
+		</li>
+	</ol>
+	<div class="content">
+		<!-- banner图 -->
+		<div class="banner page" id="section0">
+			<div class="main">
+				<div class="face animated slideInDown" id="face"></div>
+				<h2 class='name animated slideInDown'>王泽欢</h2>
+				<h3 class=" animated slideInDown">Web前端开发工程师</h3>
+				<h4 id="begin"></h4>
+				<!-- <img src="images/68W58PICY6E_1024.jpg"> -->
 			</div>
-			<div class="slide">
-				<div class="slide-box">
-					<img src="img/slide-0.jpg" alt="" style="display: block;"/>
-					<img src="img/slide-1.jpg" alt="" />
-					<img src="img/slide-2.jpg" alt="" />
-					<ul class="slide-ul">
-						<li class="active"></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</div>
+		</div>
+
+		<!-- 关于我部分 -->
+		<div class="about_me clearfix page show" id="section1">
+			<h2 class="tit">About Me</h2>
+			<h3 class="sec_tit">关于 · 我</h3>
+			<div class="my-info">
+				<span id="info-btn-prev"></span>
+				<span id="info-btn-next"></span>
+				<ul class="info-list clearfix" id="info-list">
+					<li class="info-skills fl page">
+						<div class="skill-box">
+							<div class="skill-txt">
+								<p>Hi! 我是一名前端开发工程师，能熟练的运用div+css布局切静态页面，同时熟知原生javascript的语法，并能够使用javascript写出所需求的网页动态效果。</p>
+								<p>熟悉对前端相关工具和库的使用，比如使用jQuery、zepto、jQuery-mobile等库编写pc端和移动端页面，以及grunt、gulp、github、svn等工具的使用。</p>
+								<p>并且熟悉政务HTML5+CSS3的用法，能够编写HTML5页面，并做出相应的H5效果。</p>
+							</div>
+							<ul class="skill_lis clearfix">
+								<li class="html fl">
+									<span>HTML</span>
+									<div class="skills-level"></div>
+								</li>
+								<li class="fl js">
+									<span>JS</span>
+									<div class="skills-level"></div>
+								</li>
+								<li class="fl jquery">
+									<span>jQuery</span>
+									<div class="skills-level"></div>
+								</li>
+								<li class="fl ajax">
+									<span>Ajax</span>
+									<div class="skills-level"></div>
+								</li>
+								<li class="fl html5">
+									<span>HTML5</span>
+									<div class="skills-level"></div>
+								</li>
+								<li class="fl github">
+									<span>github</span>
+									<div class="skills-level"></div>
+								</li>
+							</ul>
+						</div>						
+					</li>
+					<li class="info-details fl page">
+						<div class="details-box clearfix">
+							<div class="faces fl"></div>
+							<div class="details fl">
+								<h4>王泽欢</h4>
+								<hr style="margin-bottom: 20px;">
+								<div class="basic">
+									<p><span>年龄：</span>25</p>
+									<p><span>学历：</span>大学本科</p>
+									<p><span>Email：</span>18210609759@163.com</p>
+									<p><span>求职意向：</span>前端开发工程师</p>
+									<p class="info-tip"><span>到岗时间：</span>随时到岗</p>
+								</div>
+							</div>
+							<div class="contacts fl">
+								<ul>
+									<li><span>QQ</span><i class="detail-qq"></i></li>
+									<li><span>Wechat</span><i class="detail-wechat"></i></li>
+									<li><span>Email</span><i class="detail-email"></i></li>
+									<li><span>GitHub</span><i class="detail-git"></i></li>
+								</ul>
+							</div>
+							<a href="my_resume/rusume.doc" class="my-resume"><span class="down">下载我的简历</span></a>
+						</div>
+					</li>
+					<li class="info-levels fl page">
+						<div class="skill_point">
+							<h5>Skills Level</h5>
+							<div id="scroll">
+								<span id="bar"></span>
+							</div>
+							<div class="bar-list">
+								<ul class="clearfix" id="bar-list">
+									<li class="fl">
+										<h6>html+css</h6>
+										<canvas id="c1" width="220" height="180"></canvas>
+										<i>95%</i>
+									</li class="clearfix">
+									<li class="fl">
+										<h6 style="background: #3498db;">JavaScript</h6>
+										<canvas id="c2" width="220" height="180"></canvas>
+										<i style="background: #3498db;">85%</i>
+									</li class="clearfix">
+									<li class="fl">
+										<h6 style="background: #18bc9c;">jQuery</h6>
+										<canvas id="c3" width="220" height="180"></canvas>
+										<i style="background: #18bc9c;">80%</i>
+									</li class="clearfix">
+									<li class="fl">
+										<h6 style="background: #f39c12;">Ajax</h6>
+										<canvas id="c4" width="220" height="180"></canvas>
+										<i style="background: #f39c12;">90%</i>
+									</li class="clearfix">
+									<li class="fl">
+										<h6 style="background: #12F3E8;">HTML5+CSS3</h6>
+										<canvas id="c5" width="220" height="180"></canvas>
+										<i style="background: #12F3E8;">85%</i>
+									</li class="clearfix">
+									<li class="fl">
+										<h6 style="background: #DB3460;">github</h6>
+										<canvas id="c6" width="220" height="180"></canvas>
+										<i style="background: #DB3460;">85%</i>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="info-skills fl page">
+						<div class="skill-box">
+							<div class="skill-txt">
+								<p>Hi! 我是一名前端开发工程师，能熟练的运用div+css布局切静态页面，同时熟知原生javascript的语法，并能够使用javascript写出所需求的网页动态效果。</p>
+								<p>熟悉对前端相关工具和库的使用，比如使用jQuery、zepto、jQuery-mobile等库编写pc端和移动端页面，以及grunt、gulp、github、svn等工具的使用。</p>
+								<p>并且熟悉政务HTML5+CSS3的用法，能够编写HTML5页面，并做出相应的H5效果。</p>
+							</div>
+							<ul class="skill_lis clearfix">
+								<li class="html fl">
+									<span>HTML</span>
+									<div class="skills-level"></div>
+								</li>
+								<li class="fl js">
+									<span>JS</span>
+									<div class="skills-level"></div>
+								</li>
+								<li class="fl jquery">
+									<span>jQuery</span>
+									<div class="skills-level"></div>
+								</li>
+								<li class="fl ajax">
+									<span>Ajax</span>
+									<div class="skills-level"></div>
+								</li>
+								<li class="fl html5">
+									<span>HTML5</span>
+									<div class="skills-level"></div>
+								</li>
+								<li class="fl github">
+									<span>github</span>
+									<div class="skills-level"></div>
+								</li>
+							</ul>
+						</div>						
+					</li>
+					<li class="info-details fl page">
+						<div class="details-box clearfix">
+							<div class="faces fl"></div>
+							<div class="details fl">
+								<h4>王泽欢</h4>
+								<hr style="margin-bottom: 20px;">
+								<div class="basic">
+									<p><span>年龄：</span>25</p>
+									<p><span>学历：</span>大学本科</p>
+									<p><span>Email：</span>18210609759@163.com</p>
+									<p><span>求职意向：</span>前端开发工程师</p>
+									<p class="info-tip"><span>到岗时间：</span>随时到岗</p>
+								</div>
+							</div>
+							<div class="contacts fl">
+								<ul>
+									<li><span>QQ</span><i class="detail-qq"></i></li>
+									<li><span>Wechat</span><i class="detail-wechat"></i></li>
+									<li><span>Email</span><i class="detail-email"></i></li>
+									<li><span>GitHub</span><i class="detail-git"></i></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
 			</div>
-			<div class="design">
-				<div class="design-box">
-					
-				</div>
+		</div>
+
+		<!-- my works部分 -->
+		<div class="my_works page" id="section2">
+			<h2 class="tit work_tit animated fadeInDown">My Works</h2>
+			<p class="txt work_txt animated fadeInDown">少即是多 化繁为简 做到极致 作品即自己 专注自己</p>
+			<ul class="list clearfix">
+				<li class="html fl">
+					<a href="works1/index.html" target="_blank">
+						<h6>HTML+CSS</h6>
+						<p>1.html静态网页展示</p>
+						<p>2.模仿各大网站主页</p>
+						<p>3.使用css+div布局实现</p>
+						<p>点击查看&gt;&gt;</p>
+					</a>
+				</li>
+				<li class="jsc fl" target="_blank">
+					<a href="works3/index.html">
+						<h6>JavaScript</h6>
+						<p>1.JavaScript效果展示</p>
+						<p>2.原生JavaScript编写</p>
+						<p>3.熟悉面向对象思想</p>
+						<p>点击查看&gt;&gt;</p>
+					</a>
+				</li>
+				<li class="htm5 fl" target="_blank">
+					<a href="works2/index.html">
+						<h6>HTML5+CSS3</h6>
+						<p>1.H5+CSS3作品展示</p>
+						<p>2.精通HTML5网页布局</p>
+						<p>3.能够写出H5网站</p>
+						<p>点击查看&gt;&gt;</p>
+					</a>
+				</li>
+			</ul>
+			<a href="works1/index.html" class="work_btn">查看作品</a>
+		</div>
+
+		<!-- 底部脚部分 -->
+		<div class="footer page" id="section3">
+			<h1 class="tit foot_tit">CONTACT</h1>
+			<div class="contacts">
+				<span class="email">
+					<a href="mailto:18210609759@163.com" style="font-family:'COCOGOOSE57165136d15e63';">18210609759@163.com<em></em></a>
+				</span>
+				<span class="qq">
+					<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=632397285&site=qq&menu=yes" style="font-family:'COCOGOOSE57165136d15e63';">632397285<em></em></a>
+				</span>
+				<span class="web-site">
+					<a href="https://18210609759.github.io" target="_blank" style="font-family:'COCOGOOSE57165136d15e63';">18210609759.github.io<em></em></a>
+				</span>
 			</div>
-		</div>		
-	</body>
+		</div>
+	</div>
+
+</body>
 </html>

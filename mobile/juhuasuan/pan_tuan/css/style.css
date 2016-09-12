@@ -1,0 +1,118 @@
+header{
+	width: 16rem;
+	height: 2.5rem;
+	background: url(../img/header_bg.png);
+	background-size: 16rem 2.5rem;
+	border-top: 0.025rem solid #c5c5c5;
+}
+header .return{
+	width: 3.2rem;
+	height: 1.55rem;
+	background: url(../img/return_icon.png) no-repeat;
+	background-size: 100%;
+	margin: 0.4rem 0 0 0.5rem;
+}
+header h2{
+	width: 9.4rem;
+	text-align: center;
+	font-size: 0.8rem;
+	color: #333;
+	line-height: 2rem;
+}
+section nav{
+	width: 16rem;
+	height: 2rem; 
+	border-bottom: 0.025rem solid #dcdcdc; 
+}
+section nav ul{
+	display: -webkit-box;
+}
+section nav li{
+	width: 4rem; 
+	height: 2rem; 
+	box-sizing: border-box; 
+	border-right: 0.025rem solid #dcdcdc; 
+	-webkit-box-flex: 1;
+}
+section nav li a{
+	display:block; 
+	width: 4rem; 
+	height: 2rem; 
+	font-size: 0.6rem; 
+	color: #999; 
+	line-height: 2rem; 
+	text-align: center;
+}
+section nav li a.active{
+	color: #d51942;
+}
+
+section .list li{
+	width: 16rem;
+	height: 6.45rem;
+	border-bottom: 0.025rem solid #dcdcdc;
+}
+section .list li .txt{
+	width: 5.5rem;
+	height: 100%;
+}
+section .list li .txt h3{
+	width: 3.2rem;
+	height: 1.5rem;
+	text-indent: -9999rem;
+	margin: 0.95rem 0 0 1.25rem;
+}
+section .list li .txt h6{
+	font-size: 0.6rem;
+	color: #666;
+	margin-left: 1.25rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.75rem;
+}
+section .list li .txt .all_saled b{
+	font-size: 1.5rem;
+	color: #c7223d;
+	font-weight: bold;
+	line-height: 1.5rem;
+	margin-left: 1.05rem;
+}
+section .list li .txt .all_saled span{
+	font-size: 0.6rem;
+	color: #999;
+	line-height: 0.75rem;
+	height: 1.05rem;
+	margin-left: 0.45rem;
+}
+section .list li .txt .all_saled span i,
+section .list li .txt .all_saled span em{
+	display: block;
+}
+section .list li .txt .all_saled span em{
+	color: #c7223d;
+}
+section .list li .pics{
+	position: relative;
+	width: 10rem;
+	height: 5rem;
+	margin-top: 0.7rem;
+}
+section .list li .pics img{
+	width: 10rem;
+	height: 5rem;
+}
+section .list li .pics .shadow{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 10rem;
+	height: 1rem;
+	background: rgba(51,51,51,0.5);
+}
+section .list li .pics p{
+	position: absolute;
+	left: 0.25rem;
+	bottom: 0;
+	font-size: 0.6rem;
+	color: #fff;
+	line-height: 1rem;
+}

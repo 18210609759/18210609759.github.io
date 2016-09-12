@@ -1,0 +1,366 @@
+.content{
+	width: 100%;
+	height: auto;
+	background: #f7f7f7;
+}
+
+/*左边栏*/
+.info{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 220px;
+	height: 100%;
+	background: #75c8b9;
+}
+.details{
+	width: 192px;
+	height: 80%;
+	margin: 40px 0 0 14px;
+}
+.details .face{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	border-radius: 50%;
+	background: url(../img/dog11.jpg);
+	background-size: 100%;
+	border: 4px solid #eee;
+}
+.details h3{
+	font-size: 22px;
+	color: #2D2C2C;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+	margin: 10px 0 5px 0;
+}
+.details h4{
+	font-size: 16px;
+	text-align: center;
+	color: #2D2C2C;
+	text-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+	margin-bottom: 20px;
+}
+.details .contact ul{
+	width: 172px;
+	margin: 0 auto;
+}
+.details .contact li{
+	width: 35px;
+	height: 35px;
+	background: rgba(0,0,0,0);
+	border-radius: 50%;
+	margin-right: 8px;
+	cursor: pointer;
+	transition: .7s all ease;
+}
+.details .contact li:hover{
+	background: rgba(0,0,0,0.5);
+}
+.details .contact li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	text-indent: -999999em;
+}
+.details .contact li.email a{
+	background: url(../img/detail-email.png) no-repeat center center;
+	background-size: 25px 25px;
+}
+.details .contact li.tel a{
+	background: url(../img/detail-tel.png) no-repeat center center;
+	background-size: 25px 25px;
+}
+.details .contact li.qq a{
+	background: url(../img/detail-qq.png) no-repeat center center;
+	background-size: 25px 25px;
+}
+.details .contact li.git a{
+	background: url(../img/detail-github.png) no-repeat center center;
+	background-size: 25px 25px;
+}
+.details .contact li.email:hover a{
+	background-image: url(../img/detail-email2.png);
+}
+.details .contact li.tel:hover a{
+	background-image: url(../img/detail-tel2.png);
+}
+.details .contact li.qq:hover a{
+	background-image: url(../img/detail-qq2.png);
+}
+.details .contact li.git:hover a{
+	background-image: url(../img/detail-github2.png);
+}
+.info .details .nav li{
+	margin-bottom: 20px;
+}
+.info .details .nav li a{
+	position: relative;
+	font-size: 14px;
+	font-weight: bold;
+	color: #1B1B1B;
+	padding-left: 30px;
+	background: url(../img/nav-icon1.png) no-repeat center left;
+	background-size: 20px 20px;
+} 
+.info .details .nav li i{
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	width: 100%;
+	height: 2px;
+	background: #786BEC;
+	opacity: 0;
+	transition: .7s all ease;
+}
+.info .details .nav li a:hover i{
+	opacity: 1;
+}
+.info .details .nav li dl{
+	margin-left: 20px;
+}
+.cont{
+	margin-left: 220px;
+	width: calc(100% - 220px);
+	height: 100%;
+}
+.cont .work-list{
+	width: 100%;
+	height: auto;
+}
+.cont .work-list .work{
+	height: auto;
+}
+.cont .work-list .work .intro{
+	position: relative;
+	width: 340px;
+	height: 100%;
+	padding-right: 40px;
+	padding-bottom: 45px;
+	box-sizing: border-box;
+}
+.cont .work-list .work .intro .tit{
+	position: relative;
+	font-size: 22px;
+	font-weight: bold;
+	color: #0F0101;
+	padding-left: 30px;
+	margin: 20px 0 0 20px;
+}
+.cont .work-list .work .intro .tit i{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -5px;
+	width: 10px;
+	height: 10px;
+	background: #cb3c1c;
+	border-radius: 50%;
+}
+.cont .work-list .work .intro .txt{
+	font-size: 14px;
+	line-height: 24px;
+	color: #0F0101;
+	padding-left: 30px;
+	margin: 10px 0 0 20px;
+}
+.cont .work-list .work .intro .tips{
+	position: absolute;
+	left: 45px;
+	bottom: 10px;
+}
+.cont .work-list .work .intro .tips span{
+	font-size: 12px;
+	margin: 4px;
+	background: #F6E8B9;
+	padding: 1px 5px;
+	text-align: center;
+	color: #333;
+	border-radius: 4px;
+}
+.cont .work-list .work .my-works{
+	width: calc(100% - 340px);
+	height: auto;
+	background: #fff;
+	border-left: 1px solid #9A9999;
+	box-sizing: border-box;
+	text-align: center;
+	padding-bottom: 150px;
+}
+.cont .work-list .work .my-works .pic-drag{
+	position: relative;
+}
+.cont .work-list .work .my-works .pic-drag #drag-btn{
+	position: absolute;
+	left: 50%;
+	top: -50px;
+	margin-left: -40px;
+	width: 80px;
+	height: 35px;
+	background: #75c8b9;
+	font-size: 18px;
+	line-height: 35px;
+	text-align: center;
+	color: #fff;
+	text-shadow: 1px 2px 2px #000;
+	cursor: pointer;
+	box-shadow: 0 0 6px #ccc;
+}
+.cont .work-list .work .my-works .pic-drag ul{
+	width: 342px;
+	height: 342px;
+	margin: 80px auto 0;
+}
+.cont .work-list .work .my-works .pic-drag li{
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+	border: 2px solid #fff;
+}
+.cont .work-list .work .my-works .pic-drag li.active{
+	border: 2px dashed red;
+}
+.cont .work-list .work .my-works .pic-drag li img{
+	width: 100%;
+	height: 100%;
+}
+.cont .work-list .work .work-2 #slide{
+	position: relative;
+	width: 600px;
+	height: 350px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.cont .work-list .work .work-2 #slide ul{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 4200px;
+	height: 350px;
+	margin: 0 auto;
+}
+.cont .work-list .work .work-2 #slide ul li{
+	width: 600px;
+	height: 350px;
+	background: #ccc;
+	float: left;
+}
+.cont .work-list .work .work-2 #slide li img{
+	width: 100%;
+	height: 100%;
+}
+.cont .work-list .work .work-2 #slide span{
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 999;
+}
+.cont .work-list .work .work-2 #slide #next{
+	right: 0;
+	background: url(../img/icon.png) no-repeat 0 -50px;
+	background-size: 100%;
+}
+.cont .work-list .work .work-2 #slide #prev{
+	left: 0;
+	background: url(../img/icon.png) no-repeat 0 0;
+	background-size: 100%;
+}
+
+/*分块运动*/
+.cont .work-list .work .work-4 #move{
+	position: relative;
+	width: 700px;
+	height: 400px;
+	margin: 40px auto;
+	cursor: pointer;
+	background: url(../img/0.jpg);
+}
+.cont .work-list .work .work-4 #move span{
+	background: url(../img/1.jpg);
+}
+
+/*iphone翻页效果*/
+.cont .work-list .work .work-5 #iphone { 
+	position: relative;
+	width: 770px; 
+	height: 600px; 
+	background: url(../img/iphone_bg.png) -2px 0 no-repeat;
+	margin: 0 auto;
+}
+.cont .work-list .work .work-5 #wrap { 
+	width: 238px; 
+	height: 423px; 
+	position: absolute; 
+	top: 83px; 
+	left: 326px; 
+	overflow:hidden; 
+}
+.cont .work-list .work .work-5 #iphone ul { 
+	width: 962px; 
+	height: 423px; 
+	cursor: pointer; 
+	position: absolute; 
+	top: 0px; 
+	left: 0px; 
+}
+.cont .work-list .work .work-5 #iphone li { 
+	float: left; 
+	width:238px; 
+	height:423px; 
+	overflow:hidden; 
+}
+
+/*横向拖拽效果*/
+.cont .work-list .work .work-6 #slide-h{
+	position: relative;
+	width: 700px;
+	height: 350px;
+	background: #75c8b9;
+	margin: 60px auto;
+	overflow: hidden;
+}
+.cont .work-list .work .work-6 #slide-h ul{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -87.5px;
+	width: 1500px;
+	height: 175px;
+}
+.cont .work-list .work .work-6 #slide-h ul li{
+	position: relative;
+	float: left;
+	width: 260px;
+	height: 175px;
+}
+.cont .work-list .work .work-6 #slide-h ul li img{
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+}
+
+/*手风琴效果*/
+.cont .work-list .work .work-7 .qin ul{
+	overflow: hidden;
+	position: relative;
+	width: 700px;
+	height: 350px;
+	margin: 60px auto;
+}
+.cont .work-list .work .work-7 .qin li{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 500px;
+	height: 350px;
+}
+.cont .work-list .work .work-7 .qin li img{
+	width: 100%;
+	height: 100%;
+}

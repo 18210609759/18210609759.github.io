@@ -1,0 +1,713 @@
+body {
+	background: #424242;
+}
+
+html {
+	height: 100%;
+	overflow: hidden;
+}
+
+.content {
+	width: auto;
+	overflow: hidden;
+	height: auto;
+}
+
+/*翻页标志*/
+
+.page_tip {
+	width: 14px;
+	position: fixed;
+	right: 20px;
+	top: 50%;
+	z-index: 99999;
+}
+
+.page_tip li {
+	position: relative;
+	width: 100%;
+	height: 14px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.page_tip span {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -2px;
+	margin-top: -2px;
+	width: 4px;
+	height: 4px;
+	background: rgba(204, 204, 204, 0.8);
+	border-radius: 50%;
+}
+
+.page_tip span.p_on {
+	left: 0;
+	top: 0;
+	width: 14px;
+	height: 14px;
+	margin: 0;
+	border: 2px solid rgba(204, 204, 204, 0.8);
+	box-sizing: border-box;
+	background: none;
+}
+
+.page_tip li p {
+	width: 36px;
+	font-size: 12px;
+	position: absolute;
+	left: -40px;
+	top: -2px;
+	color: #ccc;
+	text-align: right;
+	transition: .6s all ease;
+	opacity: 0;
+}
+
+/*banner图*/
+
+.banner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: rgba(79, 133, 187, 1);
+}
+
+.banner .main {
+	width: 100%;
+	height: 100%;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	-webkit-box-orient: vertical;
+}
+.banner .one_show{
+	opacity: 0;
+	transform: translate(0,-200px);
+}
+
+.banner .face {
+	border: 8px solid #ccc;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	background: url(../images/face.jpg);
+	background-size: cover;
+}
+
+.banner .name,
+.banner h3 {
+	margin: 10px 0 0;
+	font-size: 42px;
+	color: #fff;
+	text-shadow: 1px 2px 3px #000;
+}
+
+.banner h3 {
+	font-size: 22px;
+}
+
+.banner #begin span {
+	opacity: 0;
+}
+
+.banner h4 {
+	margin-top: 30px;
+	color: #fff;
+	width: 500px;
+	line-height: 30px;
+	font-size: 16px;
+	text-align: center;
+	text-shadow: 1px 2px 3px #000;
+}
+
+/*关于我部分*/
+
+.about_me {
+	position: relative;
+	background: #75c8b9;
+	background-size: cover;
+	width: auto;
+}
+
+.about_me .right {
+	width: 100%;
+}
+
+.content .tit {
+	margin: 0 auto;
+	padding-top: 0.5em;
+	text-align: center;
+	color: #fff;
+	font-size: 50px;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px #666;
+}
+
+.content .txt {
+	margin: 44px auto;
+	width: 360px;
+	color: rgba(0,0,0,.5);
+}
+
+.sec_tit {
+	position: relative;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 12px;
+	color: #fff;
+}
+
+.sec_tit span {
+	position: absolute;
+	width: 500px;
+	height: 4px;
+	background: rgba(173, 173, 173, 0.4);
+}
+
+.about_me .my-info {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.about_me .my-info #info-btn-prev,
+.about_me .my-info #info-btn-next {
+	position: absolute;
+	top: 40%;
+	margin-top: -15px;
+	width: 17px;
+	height: 30px;
+	cursor: pointer;
+	z-index: 9999999;
+}
+
+.about_me .my-info #info-btn-prev {
+	left: 12%;
+	background: url(../images/arrows.png) no-repeat;
+}
+
+.about_me .my-info #info-btn-next {
+	right: 12%;
+	background: url(../images/arrows.png) no-repeat 0 -30px;
+}
+
+.about_me .my-info .info-list {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 480px;
+}
+
+.about_me .my-info .info-list .info-levels,
+.about_me .my-info .info-list .info-details,
+.about_me .my-info .info-list .info-skills {
+	width: 1366px;
+	height: 510px;
+}
+
+.about_me .my-info .info-list .info-details {
+	width: 1366px;
+	height: auto;
+}
+
+.about_me .my-info .info-list .info-details .details-box {
+	position: relative;
+	width: 880px;
+	height: 460px;
+	background: url(../images/bodybg.png);
+	margin: 40px auto;
+	border: 3px solid #dcdcdc;
+	box-shadow: 0 0 6px #000;
+}
+
+.about_me .my-info .info-list .info-details .details-box .faces {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 4px solid #000;
+	background: url(../images/face.jpg);
+	background-size: 100%;
+	margin: 120px 50px 0 50px;
+}
+
+.about_me .my-info .info-list .info-details .details-box .details {
+	width: 310px;
+	height: auto;
+}
+
+.about_me .my-info .info-list .info-details .details-box .details h4 {
+	font-size: 36px;
+	font-weight: bold;
+	color: #3d4451;
+	margin: 80px 0 20px 0;
+}
+
+.about_me .my-info .info-list .info-details .details-box .details .basic {
+	font-size: 16px;
+}
+
+.about_me .my-info .info-list .info-details .details-box .details .basic p {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.about_me .my-info .info-list .info-details .details-box .details .basic p span {
+	display: inline-block;
+	width: 108px;
+}
+
+.about_me .my-info .info-list .info-details .details-box .details .basic .info-tip span {
+	font-weight: bold;
+	color: #3d4451;
+}
+
+.about_me .my-info .info-list .info-details .details-box .contacts {
+	width: 100px;
+	margin: 90px 0 0 70px;
+}
+
+.about_me .my-info .info-list .info-details .details-box .contacts li {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+.about_me .my-info .info-list .info-details .details-box .contacts li i {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -15px;
+	margin-top: -15px;
+	width: 30px;
+	height: 30px;
+}
+
+.about_me .my-info .info-list .info-details .details-box .my-resume {
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	margin-left: -50px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: url(../images/down_icon.png) no-repeat center center;
+	background-size: 35px 35px;
+	transition: .5s all ease;
+}
+
+.about_me .my-info .info-list .info-details .details-box .my-resume .down {
+	position: absolute;
+	right: -90px;
+	top: 50%;
+	margin-top: -11px;
+	width: 80px;
+	height: 22px;
+	border-radius: 3px;
+	background: rgba(109,109,109,0.5);
+	font-size: 12px;
+	color: #fff;
+	line-height: 22px;
+	text-align: center;
+	opacity: 0;
+	display: none;
+}
+
+.about_me .my-info .info-list .info-details .details-box .my-resume:hover .down {
+	display: block;
+	opacity: 1;
+}
+
+.about_me .my-info .info-list .info-details .details-box .my-resume:hover {
+	box-shadow: 0 0 10px #000;
+}
+
+.about_me .my-info .info-list .info-details .details-box .contacts li i.detail-qq {
+	background: url(../images/detail-qq.png);
+	background-size: cover;
+}
+
+.about_me .my-info .info-list .info-details .details-box .contacts li i.detail-wechat {
+	background: url(../images/detail-wechat.png);
+	background-size: cover;
+}
+
+.about_me .my-info .info-list .info-details .details-box .contacts li i.detail-email {
+	background: url(../images/detail-email.png);
+	background-size: cover;
+}
+
+.about_me .my-info .info-list .info-details .details-box .contacts li i.detail-git {
+	background: url(../images/detail-github.png);
+	background-size: cover;
+}
+
+.about_me .my-info .info-list .info-details .details-box .contacts li:hover {
+	background: #ccc;
+}
+
+.about_me .my-info .info-list .info-details .details-box .contacts li:hover span {
+	opacity: 1;
+}
+
+.about_me .my-info .info-list .info-details .details-box .contacts li span {
+	position: absolute;
+	right: -75px;
+	top: 50%;
+	margin-top: -11px;
+	width: 60px;
+	height: 22px;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	line-height: 24px;
+	background: #837F7F;
+	border-radius: 4px;
+	opacity: 0;
+	transition: 1s all ease;
+}
+
+.about_me .my-info .info-list .info-skills .skill-box {
+	width: 900px;
+	height: 466px;
+	margin: 20px auto;
+}
+
+.about_me .my-info .info-list .info-skills .skill-txt {
+	padding-top: 40px;
+	width: 100%;
+	height: calc(50%-50px);
+}
+
+.about_me .my-info .info-list .info-skills .skill-txt p {
+	width: 680px;
+	font-size: 16px;
+	line-height: 34px;
+	color: #fff;
+	margin: 0 auto;
+}
+
+.about_me .my-info .info-list .info-skills .skill_lis {
+	width: 80%;
+	height: 40%;
+	margin: 30px auto 0;
+	box-shadow: 0 0 10px #000;
+	background: #f7f7f7;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+}
+
+.about_me .my-info .info-list .info-skills .skill_lis li {
+	position: relative;
+	width: 70px;
+	height: 70px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	margin: 20px;
+	cursor: pointer;
+}
+
+
+
+.about_me .my-info .info-list .info-skills .skill_lis li span {
+	position: absolute;
+	left: 2px;
+	bottom: -40px;
+	width: 60px;
+	height: 25px;
+	font-size: 12px;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 25px;
+	background: #585858;
+	color: #fff;
+	opacity: 0;
+	transition: .5s all ease;
+	transform: translateY(-10px);
+}
+
+.about_me .my-info .info-list .info-skills .skill_lis li:hover span {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.about_me .my-info .info-list .info-skills .skill_lis li.html {
+	background: url(../images/html-icon.png) no-repeat center;
+	background-size: 30px 30px;
+}
+
+.about_me .my-info .info-list .info-skills .skill_lis li.js {
+	background: url(../images/js.png) no-repeat center;
+	background-size: 30px 30px;
+}
+
+.about_me .my-info .info-list .info-skills .skill_lis li.jquery {
+	background: url(../images/jquery.png) no-repeat center;
+	background-size: 30px 30px;
+}
+
+.about_me .my-info .info-list .info-skills .skill_lis li.ajax {
+	background: url(../images/ajax.png) no-repeat center;
+	background-size: 50px 50px;
+}
+
+.about_me .my-info .info-list .info-skills .skill_lis li.html5 {
+	background: url(../images/html5.png) no-repeat center;
+	background-size: 30px 30px;
+}
+
+.about_me .my-info .info-list .info-skills .skill_lis li.github {
+	background: url(../images/github.png) no-repeat center;
+	background-size: 30px 30px;
+}
+
+.about_me .my-info .info-list .info-levels .skill_point h5 {
+	font-size: 35px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.about_me .my-info .info-list .info-levels .skill_point {
+	position: relative;
+	width: 1000px;
+	height: 470px;
+	margin: 40px auto 0;
+}
+
+/*滚动条*/
+
+.about_me #scroll {
+	z-index: 999999;
+	opacity: 0.1;
+	position: absolute;
+	right: 20px;
+	width: 5px;
+	height: 380px;
+	background: #eee;
+}
+
+.about_me #scroll #bar {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 60%;
+	background: #2B2A2A;
+}
+
+.about_me .my-info .info-list .info-levels .skill_point .bar-list {
+	width: 1000px;
+	height: 400px;
+	overflow: hidden;
+	position: relative;
+}
+
+.about_me .my-info .info-list .info-levels .skill_point #bar-list {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.about_me .my-info .info-list .info-levels .skill_point li {
+	position: relative;
+	width: 220px;
+	height: 280px;
+	background: #eee;
+	margin: 0 50px 60px 50px;
+	border-radius: 10px 10px 0 0;
+}
+
+.about_me .my-info .info-list .info-levels .skill_point li h6 {
+	width: 100%;
+	height: 60px;
+	background: #e74c3c;
+	font-size: 26px;
+	color: #fff;
+	text-align: center;
+	line-height: 60px;
+	font-weight: bold;
+	border-radius: 6px 6px 0 0;
+}
+
+.about_me .my-info .info-list .info-levels .skill_point li i {
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	margin-left: -40%;
+	width: 80%;
+	height: 30px;
+	background: #e74c3c;
+	border-radius: 4px;
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+}
+
+/*我的作品部分*/
+
+.my_works {
+	width: 100%;
+	height: calc(100%-50px);
+	position: relative;
+	background: url(../images/bg-icon.png) #d7d7d7;
+	background-size: 100%;
+}
+
+.my_works .work_tit,
+.my_works .work_txt {
+	color: #4D4D4D;
+}
+
+.my_works .list {
+	width: 1170px;
+	height: 240px;
+	margin: 6em auto;
+	position: relative;
+}
+
+.my_works .list li {
+	position: relative;
+	width: 350px;
+	height: 240px;
+	overflow: hidden;
+	background: #ccc;
+	margin-right: 40px;
+	cursor: pointer;
+	box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+.my_works .list li a {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	opacity: 0;
+}
+
+.my_works .list li a h6 {
+	font-size: 24px;
+	color: #fff;
+	line-height: 30px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.my_works .list li a p {
+	margin-left: 50px;
+	font-size: 20px;
+	color: #fff;
+	line-height: 30px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.my_works .list .html {
+	background: url(../images/html_bg.JPG);
+	background-size: 350px 240px;
+}
+
+.my_works .list .jsc {
+	background: url(../images/js_bg.jpg);
+	background-size: 350px 240px;
+}
+
+.my_works .list .htm5 {
+	background: url(../images/h5_bg.jpg);
+	background-size: 350px 240px;
+}
+
+.my_works .work_btn {
+	display: block;
+	margin: 60px auto 0;
+	width: 160px;
+	height: 40px;
+	border: 1px solid #4E4C4C;
+	font-size: 20px;
+	text-align: center;
+	line-height: 40px;
+	color: #4D4D4D;
+	cursor: pointer;
+	transition: .5s all ease;
+}
+
+.my_works .work_btn:hover {
+	box-shadow: 0 0 10px #000;
+}
+
+/*footer部分*/
+
+.footer {
+	width: 100%;
+	height: auto;
+	background: url(../images/map.png) no-repeat #fff;
+	background-size: cover;
+	padding-top: 50px;
+}
+
+.footer .foot_tit {
+	color: #5b6074;
+}
+
+.footer .contacts {
+	margin: 4em auto 0;
+	position: relative;
+	width: 100%;
+	height: 500px;
+}
+
+.footer .contacts span {
+	display: block;
+	padding-left: 100px;
+	width: 700px;
+	height: 60px;
+	background-size: 60px 60px;
+	margin: 0 auto 60px;
+}
+
+.footer .contacts a {
+	position: relative;
+	color: #5b6074;
+	font-size: 45px;
+	line-height: 60px;
+}
+
+.footer .contacts a:hover em {
+	opacity: 1;
+}
+
+.footer .contacts span em {
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	width: 100%;
+	height: 3px;
+	background: #10A7AF;
+	opacity: 0;
+	transition: .6s all ease;
+}
+
+.footer .email {
+	background: url(../images/email.png) no-repeat;
+}
+
+.footer .qq {
+	background: url(../images/detail-qq.png) no-repeat;
+}
+
+.footer .web-site {
+	background: url(../images/web.png) no-repeat;
+}

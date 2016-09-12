@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>王泽欢 | 个人网站</title>
+	<link rel="icon" href="img/titicon.png" type="image/x-icon"/> <!--标题图标-->
+	<link rel="stylesheet" href="../css/base.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<script src="../js/common.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<div class="content">
+		<div class="info animated slideInLeft">
+			<div class="details">
+				<div class="face"></div>
+				<h3>王泽欢</h2>
+				<h4>前端开发工程师</h4>
+				<div class="contact">
+					<ul class="clearfix">
+						<li class="fl email"><a href="mailto:wangruqiao890@126.com" title="wangruqiao890@126.com">email</a></li>
+						<li class="fl tel"><a href="javascript:;" title="18600369842">tel</a></li>
+						<li class="fl qq"><a href="http://wpa.qq.com/msgrd?v=3&uin=568027610&site=qq&menu=yes" title="568027610">qq</a></li>
+						<li class="fl git"><a href="http://wang5688.github.io" title="wang5688.github.io">github</a></li>
+					</ul>
+				</div>
+				
+				<hr style="width: 100%; height: 2px;
+				background: #ccc; border: none; margin-top: 20px; margin-bottom: 20px;">
+
+				<div class="nav">
+					<ul>
+						<li><a href="../index.html"><i></i>首页</a></li>
+						<li><a href="../works1/index.html"><i></i>HTML作品</a></li>
+						<li><a href="../works3/index.html"><i></i>JavaScript作品</a></li>
+						<li><a href="index.html" style="color: #fff; font-size: 20px;"><i></i>
+							HTML5作品
+						</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="cont">
+			<ul class="work-list animated slideInRight">
+				<!-- canvas画板 -->
+				<li class="work clearfix">
+					<div class="intro fl">
+						<h5 class="tit"><i></i>Canvas画板</h5>
+						<p class="txt">此案例主要运用canvas标签的基本方法，通过鼠标在画板上移动时记录的点，在画板上画出线条，模拟出一个最基本、简单的画板效果。</p>
+						<div class="tips clearfix">
+							<span class="fl">canvas</span>
+							<span class="fl">mousemove</span>
+							<span class="fl">事件对象</span>
+						</div>
+					</div>
+					<div class="my-works fl">
+						<canvas id="c1" width="600" height="340"></canvas>
+					</div>
+				</li>
+				<!-- 立方体 -->
+				<li class="work clearfix">
+					<div class="intro fl">
+						<h5 class="tit"><i></i>自由变化立方体</h5>
+						<p class="txt">通过css3的transform属性，开启3D模式画出立方体盒子，然后为立方体盒子加上鼠标拖拽控制，使立方体能够通过鼠标的拖拽自由的变换。</p>
+						<div class="tips clearfix">
+							<span class="fl">transform</span>
+							<span class="fl">translate</span>
+							<span class="fl">拖拽</span>
+							<span class="fl">高级运动</span>
+						</div>
+					</div>
+					<div class="my-works work-2 fl">
+						<div id="box-3d">
+							<div class="front">前</div>
+							<div class="back">后</div>
+							<div class="left">左</div>
+							<div class="right">右</div>
+							<div class="top">上</div>
+							<div class="bottom">下</div>
+						</div>
+					</div>
+				</li>
+				<!-- 文字阴影效果 -->
+				<li class="work clearfix">
+					<div class="intro fl">
+						<h5 class="tit"><i></i>文字倒影效果</h5>
+						<p class="txt">随着鼠标位置的变化，文字的倒影会呈现出如影子般的变化。通过鼠标距离文字的距离改变文字text-shadow的属性来实现此效果</p>
+						<div class="tips clearfix">
+							<span class="fl">text-shadow</span>
+							<span class="fl">onmousemove</span>
+						</div>
+					</div>
+					<div class="my-works fl">
+						<div id="txt-shadow">
+							<div>Web前端开发工程师</div>
+						</div>
+					</div>
+				</li>
+				<!-- css3时钟效果 -->
+				<li class="work clearfix">
+					<div class="intro fl">
+						<h5 class="tit"><i></i>CSS3时钟效果</h5>
+						<p class="txt">此案例主要运用了时间对象、CSStransform属性等，通过定时器是时钟能够随着时间变化而正常运转。</p>
+						<div class="tips clearfix">
+							<span class="fl">oDate时间对象</span>
+							<span class="fl">transform</span>
+							<span class="fl">rotate</span>
+						</div>
+					</div>
+					<div class="my-works work-2 fl">
+						<div id="clock">
+							<div class="hour"></div>
+							<div class="min"></div>
+							<div class="sec"></div>
+							<div class="cap"></div>
+						</div>
+					</div>
+				</li>
+				<!-- 切换效果 -->
+				<!-- <li class="work clearfix">
+					<div class="intro fl">
+						<h5 class="tit"><i></i>HTML5+CSS3切换效果</h5>
+						<p class="txt">利用CSS3的transform方法，实现了五种切换页面的效果，翻页、翻转、爆炸、扭曲和立方体5种效果。效果高大上、性能高，非常值得推荐。</p>
+						<div class="tips clearfix">
+							<span class="fl">transform</span>
+							<span class="fl">rotate</span>
+							<span class="fl">translate</span>
+							<span class="fl">3d</span>
+						</div>
+					</div>
+					<div class="my-works work-5 fl">
+						<div id="turning">
+							 <div class="page">
+								<span class="front"></span>
+								<span class="back"></span>
+							</div> 
+						</div>
+						<div id="turn-btn">
+							<div>翻页</div>
+							<div>翻转</div>
+							<div>爆炸</div>
+							<div>扭曲</div>
+							<div>立方体</div>
+						</div>
+					</div>
+				</li> -->
+				<!-- 屏风切换效果 -->
+				<li class="work clearfix">
+					<div class="intro fl">
+						<h5 class="tit"><i></i>屏风切换效果</h5>
+						<p class="txt">这个效果大量借助了css3自带的一些transition动画去实现的。然后再配合上一些js，去完成这样的一个效果。</p>
+						<div class="tips clearfix">
+							<span class="fl">transition</span>
+							<span class="fl">transiform</span>
+						</div>
+					</div>
+					<div class="my-works work-6 fl">
+						<div class="screen"><a href="screen_photo/index.html" target="_blank"></a></div>
+					</div>
+				</li>
+				<!-- 旋转合并照片墙 -->
+				<li class="work clearfix">
+					<div class="intro fl">
+						<h5 class="tit"><i></i>旋转合并照片墙</h5>
+						<p class="txt">随着鼠标位置的变化，文字的倒影会呈现出如影子般的变化。通过鼠标距离文字的距离改变文字text-shadow的属性来实现此效果</p>
+						<div class="tips clearfix">
+							<span class="fl">text-shadow</span>
+							<span class="fl">onmousemove</span>
+						</div>
+					</div>
+					<div class="my-works work-7 fl">
+						<div id="circu">
+							<!-- <div><span></span></div> -->
+						</div>
+						<div class="cir-btn">
+							<div id="cir-prev"></div>
+							<div id="cir-next"></div>
+						</div>
+					</div>
+				</li>
+				<!-- 扑克牌(3D图片环) -->
+				<li class="work clearfix">
+					<div class="intro fl">
+						<h5 class="tit"><i></i>3D扑克牌效果</h5>
+						<p class="txt">此案例通过css的transform方法，使扑克牌分散开，做出一种洗牌的效果，效果高大上。</p>
+						<div class="tips clearfix">
+							<span class="fl">transform</span>
+							<span class="fl">rotate</span>
+							<span class="fl">translate</span>
+						</div>
+					</div>
+					<div class="my-works work-8 fl">
+						<div class="poker"><a href="3d_poker/index.html" target="_blank"></a></div>
+					</div>
+				</li>
+				<!-- Canvas柱状图 -->
+				<li class="work clearfix">
+					<div class="intro fl">
+						<h5 class="tit"><i></i>Canvas柱状图</h5>
+						<p class="txt">通过引用canvas标签，配合js在canvas上画出对数据分析后的结果的柱状图。</p>
+						<div class="tips clearfix">
+							<span class="fl">canvas</span>
+						</div>
+					</div>
+					<div class="my-works work-9 fl">
+						<canvas id="c2" width="600" height="400"></canvas>
+					</div>
+				</li>
+				<!-- Canvas变换曲线 -->
+				<li class="work clearfix">
+					<div class="intro fl">
+						<h5 class="tit"><i></i>Canvas变换曲线</h5>
+						<p class="txt">在canvas标签随机画出5个点，将这5个点连接起来，随机运动，展示出windows屏保的类似效果。</p>
+						<div class="tips clearfix">
+							<span class="fl">canvas</span>
+							<span class="fl">Math.random</span>
+							<span class="fl">运动</span>
+						</div>
+					</div>
+					<div class="my-works work-10 fl">
+						<div class="canvas-line"><a href="change_line/index.html" target="_blank"></a></div>
+					</div>
+				</li>
+				<!-- 移动端网站开发 -->
+				<li class="work clearfix">
+					<div class="intro fl">
+						<h5 class="tit"><i></i>移动端网站开发</h5>
+						<p class="txt">以下为使用原生代码开发的移动端页面，请扫描二维码查看</p>
+						<div class="tips clearfix">
+							<span class="fl">移动端</span>
+							<span class="fl">H5</span>
+						</div>
+					</div>
+					<div class="my-works work-11 fl">
+						<div></div>
+						<p>扫描二维码查看移动端页面</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
